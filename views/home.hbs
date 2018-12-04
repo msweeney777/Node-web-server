@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <title>Some Website</title>
   </head>
-  <body>
-    <h1>{{pageTitle}}</h1>
-    <p>{{welcomeMessage}}</p>
 
-    <footer>
-      <p>Copyright {{currentYear}}</p>
-    </footer>
+  <body>
+    {{> header}}
+
+    <p>{{screamIt welcomeMessage}}</p>
+
+    {{> footer}}
   </body>
 </html>
